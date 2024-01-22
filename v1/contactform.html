@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Contact Form</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/main">Home</a></li>
+        <li><a href="/testimonies">Testimonies</a></li>
+        <li><a href="/contact">Summon Us</a></li>
+      </ul>
+    </nav>
+
+    <h1>Summon Us</h1>
+
+    <form action="/contact" method="get">
+        <label for="name">Their name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="date">Choose a date:</label>
+        <input type="date" id="date" name="date">
+        <br>
+        <label for="dropdown">Choose a fate:</label>
+        <select id="dropdown" name="dropdown">
+            <option value="service 1">Cubicle Claymore</option>
+            <option value="service 2">Hybrid Halberd</option>
+            <option value="service 3">Vacation Voulge</option>
+        </select>
+        <br>
+        <label for="behead">Would you like a trophy?</label>
+        <input type="checkbox" id="behead" name="behead" value="trophy">
+        <br>
+        <label for="submit">Look good?</label>
+        <input type="submit" id="submit" value="Confirm" name="confirm">
+    </form>
+  </body>
+</html>
