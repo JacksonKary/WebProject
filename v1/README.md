@@ -1,6 +1,6 @@
 # Version 1
 ## Description
-This is the first version of this website. It was made using HTML files and a python server.
+This is the first version of this website. It was made using HTML files and a Python server.
 
 ## How to run
 This version can be ran in a few simple steps:
