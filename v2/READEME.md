@@ -1,5 +1,5 @@
 # Version 2
-## Description
+## Change Log
 In this version, I implemented several new endpoints, along with CSS styling, and dynamic HTML generation for the contact log.
 
 The contact form now updates the contact log.
