@@ -25,14 +25,14 @@ This version can be ran, or so they say.
 - Clone this repo and open a terminal in the <code>v6</code> directory
 - Enter your login information for `user`, `database`, `password` in <code>data.js</code>.
     - **NOTE: these values should *really* be stored as environment variables for safety, but I ignored it for this project.**
-- 1. Assuming your MYSQL server is *NOT* behind a firewall:
+1. Assuming your MYSQL server is *NOT* behind a firewall:
     - Open your MYSQL database in another terminal. Create both `sale` and `contact` tables with the CREATE commands in <code>schema.sql</code>.
     - Run these commands:
         - <code>npm install</code>
         - <code>node server.js</code>
-- 2. If you, too, are an unfortunate soul, here's how to tunnel under the firewall:
+2. If you, too, are an unfortunate soul, here's how to tunnel under the firewall:
     - Open your MYSQL database in another terminal (you will probably need to SSH into the network first). Create both `sale` and `contact` tables with the CREATE commands in <code>schema.sql</code>.
-    - In <code>tunnel.js<code>, change the final line to be the following format:
+    - In <code>tunnel.js</code>, change the final line to be the following format:
         - <code>start_server('name of network machine', 'name of network's internal MYSQL server', 3306);</code>
         - Note: the last argument must be 3306, as that is the MYSQL port.
     - Run these commands: <b>NOTE: DO THESE IN ORDER</b>
