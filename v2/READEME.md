@@ -2,6 +2,10 @@
 ## Description
 In this version, I implemented several new endpoints, along with CSS styling, and dynamic HTML generation for the contact log.
 
+The contact form now updates the contact log.
+
+Is the image on the front page getting longer, or is it just me?
+
 ## How to run
 This version can be ran in a few simple steps:
 
