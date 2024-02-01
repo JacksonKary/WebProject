@@ -1,0 +1,81 @@
+/* dark mode */
+
+/* https://stackoverflow.com/questions/37965625/create-a-background-pattern-in-css */
+.dark-mode { 
+    background:
+    repeating-linear-gradient( -45deg,black, rgb(90, 90, 90) 1px,rgb(131, 131, 131) 1px);
+    margin: 0;
+    font-family: 'MedievalSharp', cursive;
+    color: white;
+}
+
+.dark-mode nav {
+    display: flex;
+    align-self: normal;
+    background-color: black;
+    justify-content: space-evenly;
+    margin: 0;
+    min-height: 4vh;
+    align-items: center;
+}
+.dark-mode nav a {
+    color: white;
+    text-decoration: none;
+    background-color: rgb(90, 90, 90);
+    padding: .6vh;
+    border-radius: 3em;
+}
+.dark-mode nav a:hover, .dark-mode nav button:hover {
+    background-color: slategray;
+}
+.dark-mode nav button {
+    color: white;
+    text-decoration: none;
+    background-color: rgb(90, 90, 90);
+    padding: .6vh;
+    border-radius: 3em;
+    font-family: 'MedievalSharp', cursive;
+}
+
+.dark-mode .review {
+    border-style: solid;
+    border-width: 0.2em;
+    border-color: white;
+    border-radius: 0.5em;
+    padding: 0.2em;
+    margin: 0.5em;
+}
+
+.dark-mode div.subimg {
+    background-color: rgb(128, 128, 128);
+    border-radius: 10px;
+    min-width: 50%;
+    max-width: 50%;
+    border-style: solid;
+    border-width: .2em;
+    border-color: rgb(61, 61, 61);
+}
+
+.dark-mode div.vidbox {
+    background-color: rgb(128, 128, 128);
+    border-radius: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.dark-mode div.form {
+    background-color: rgb(128, 128, 128);
+    border-radius: 0.5em;
+    padding: 0.7em;
+    align-self: center;
+}
+
+.dark-mode table, .dark-mode th, .dark-mode td {
+    border: 0.1em solid;
+    border-collapse: collapse;
+    background-color: lightgray;
+    color:black;
+}
+.dark-mode tr:nth-child(even) td {
+    background-color: rgb(158, 158, 158);
+}
