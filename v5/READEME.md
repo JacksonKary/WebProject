@@ -4,8 +4,8 @@
     - Why didn't I start here? Great question
 
 2. **ALL HTML** replaced with **Pug**
-    - Pug, formerly known as Jade, is a concise and elegant templating language for generating HTML. It allows developers to write HTML more efficiently by using indentation-based syntax rather than explicit closing tags. With its simplicity and powerful features like mixins and inheritance, Pug streamlines the process of creating dynamic web content.
-    - ![Mugsy](image.png)
+    - Pug, formerly known as Jade, is a concise and elegant templating language for generating HTML. It makes writing HTML more efficient by using indentation-based syntax rather than explicit closing tags. With its simplicity and powerful features like mixins and inheritance, Pug streamlines the process of creating dynamic web content.
+    - Mugsy <img src="image.png" width="176" height="236">
 
 <br>
 
