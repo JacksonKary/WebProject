@@ -10,6 +10,11 @@ However, I have not given up completely on the front-end just yet. I'm currently
 
 <br>
 
+Video demo of Instagram Mock. Please focus on the backend/SQL & password storage, not the appearance or completeness. (Google Drive share link): [https://drive.google.com/file/d/1G7ch8YGyTAmCJD-Mh4Jp9d304_1yWYFv/view?usp=sharing](https://drive.google.com/file/d/1G7ch8YGyTAmCJD-Mh4Jp9d304_1yWYFv/view?usp=sharing)
+
+![image](https://github.com/JacksonKary/WebProject/assets/117691954/1fcb4dad-9b03-4ae5-9d71-70eb3b97eef0)
+
+
 ## How to run
 This version can be ran, or so they say.
 
