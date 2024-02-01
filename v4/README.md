@@ -10,6 +10,8 @@
 
 4. Parameter parser is more involved - checks emails and dates with regex to ensure proper format, sanitizes all other form inputs.
 
+<br>
+
 ## How to run
 This version can be ran in a few simple steps:
 
