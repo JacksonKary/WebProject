@@ -1,0 +1,171 @@
+/* https://stackoverflow.com/questions/37965625/create-a-background-pattern-in-css */
+body { 
+    background:
+    repeating-linear-gradient( -45deg,white, lightgray 1px,gray 1px);
+    margin: 0;
+    font-family: 'MedievalSharp', cursive;
+}
+
+main {
+    display: flex;
+    min-height:100vh;
+    width:100vw;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    align-self: normal;
+    background-color: gray;
+    justify-content: space-evenly;
+    margin: 0;
+    min-height: 4vh;
+    align-items: center;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    padding: .6vh;
+    border-radius: 3em;
+}
+nav a:hover {
+    background-color: slategray;
+}
+nav button {
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    padding: .6vh;
+    border-radius: 3em;
+    font-family: 'MedievalSharp', cursive;
+}
+nav button:hover {
+    background-color: slategray;
+}
+
+div.top {
+    flex-grow: 0;
+}
+
+div.bottom {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+div.bottom h1#title {
+    font-size: 3.5em;
+}
+
+
+div.reviews {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 0;
+    justify-content: center;
+}
+.review {
+    border-style: solid;
+    border-width: 0.2em;
+    border-color: black;
+    border-radius: 0.5em;
+    padding: 0.2em;
+    margin: 0.5em;
+}
+
+div.leftcol, div.rightcol {
+    max-width: 45vw;
+    justify-content: space-between;
+}
+div.leftcol p:not(:first-child), div.rightcol p:not(:first-child) {
+    text-align: right;
+    font-weight: bold;
+}
+
+
+em {
+    color: slateblue;
+}
+
+strong {
+    color: crimson;
+}
+
+div.bottom img {
+    align-self: center;
+    min-width: 75%;
+    max-width: 75%;
+    margin-bottom: 1em;
+}
+
+div.subimg {
+    background-color: lightgray;
+    border-radius: 10px;
+    min-width: 50%;
+    max-width: 50%;
+    border-style: solid;
+    border-width: .2em;
+    border-color: black;
+}
+
+iframe {
+    padding: 0.3em;
+    border: none;
+    align-self: center;
+}
+div.vidbox {
+    background-color: lightgray;
+    border-radius: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+div.bottom ol {
+    list-style-position: inside;
+    margin: 0;
+}
+div.formpage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+div.form {
+    background-color: lightgray;
+    border-radius: 0.5em;
+    padding: 0.7em;
+    align-self: center;
+}
+div.form input, div.form label, div.form select {
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+}
+
+table, th, td {
+    border: 0.1em solid;
+    border-collapse: collapse;
+    background-color: lightgray;
+}
+
+
+div.table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+tr:nth-child(even) td {
+    background-color: rgb(158, 158, 158);
+}

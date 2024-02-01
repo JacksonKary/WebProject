@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/main.dark.css">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <script src="/main.js"></script>
+    <script src="/contact.js" async defer></script>
+  </head>
+  <body>
+    <div class="top">
+      <nav>
+        <span><a href="/main">Home</a></span>
+        <span><a href="/testimonies">Testimonies</a></span>
+        <span><a href="/contact">Summon Us</a></span>
+        <span><a href="/admin/contactlog">Contacts List</a></span>
+        <span><button id="theme">Toggle Theme</button></span>
+      </nav>
+    </div>
+
+    <div class="formpage">
+      <h1>Summon Us</h1>
+
+      <div class="form">
+        <form action="/contact" method="post">
+            <label for="Name">Their name:</label>
+            <input type="text" id="Name" name="Name" required>
+            <br>
+            <label for="Email">Email:</label>
+            <input type="email" id="Email" name="Email" required>
+            <br>
+            <label for="Date">Choose a date:</label>
+            <input type="date" id="Date" name="Date">
+            <br>
+            <label for="Dropdown">Choose a fate:</label>
+            <select id="Dropdown" name="Dropdown">
+                <option value="Claymore">Cubicle Claymore</option>
+                <option value="Halberd">Hybrid Halberd</option>
+                <option value="Voulge">Vacation Voulge</option>
+            </select>
+            <br>
+            <label for="Spooky">Would you like us to be spooky?</label>
+            <input type="checkbox" id="Spooky" name="Spooky" value="Yes">
+            <br>
+            <p id="cost"></p>
+            <br>
+            <label for="submit">Look good?</label>
+            <input type="submit" id="submit" value="Confirm" name="confirm">
+        </form>
+      </div>
+    </div>
+    
+    
+  </body>
+</html>
