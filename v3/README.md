@@ -1,5 +1,5 @@
 # Version 3
-## Description
+## Change Log
 Dark mode is here! Feel free to toggle dark/light mode using the handle button on the nav bar.
 
 Added visual feedback for contact form submissions.
