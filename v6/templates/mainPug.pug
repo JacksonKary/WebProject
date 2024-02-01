@@ -1,0 +1,26 @@
+doctype html
+html(lang='en')
+    head 
+        meta(charset='UTF-8')
+        block title
+        link(rel='stylesheet' href='/css/main.css')
+        link(rel='stylesheet' href='/css/main.dark.css')
+        block links
+        link(rel='stylesheet' href='https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap')
+        block styles
+        script(src='/js/main.js')
+        block scripts 
+    body 
+        div.top
+            nav
+                span
+                    a(href='/main') Home
+                span
+                    a(href='/testimonies') Testimonies
+                span
+                    a(href='/contact') Summon Us
+                span
+                    a(href='/admin/contactlog') Contacts List
+                span
+                    button#theme Toggle Theme
+        block content 

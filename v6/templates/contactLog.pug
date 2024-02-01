@@ -1,0 +1,59 @@
+extends mainPug.pug
+
+mixin generateTableFromJSON(contacts)
+    tr
+        each key in Object.keys(contacts)
+            if key === "Id"
+                th.hide= key
+            else
+                th= key
+        th Delete Row 
+
+    - const log_depth = contacts["Name"].length
+
+    - for (let i = 0; i < log_depth; i++)
+        tr
+            each key in Object.keys(contacts)
+                if key === "Email"
+                    td
+                        a(href=`mailto:${contacts[key][i]}`)= contacts[key][i]
+                else if key === "Id"
+                    td.hide= contacts[key][i]
+                else
+                    td= contacts[key][i]
+            td
+                button.deleteMe DELETE ME
+
+block title
+    title Contact Log
+
+block styles
+    style.
+      td.hide, th.hide {
+        display: none;
+      }
+      div#adminInterface {
+        display: inline-block;
+        align-self: center;
+        margin-top: 1em;
+        padding: 1em;
+        text-align: center;
+        background-color: gray;
+      }
+
+block scripts
+    script(src='/js/table.js', async, defer)
+
+block content
+    div.bottom
+        div#adminInterface
+            p SET SALE
+            label(for='Input') Sale Text:
+            input(type='text', id='Input', name='Input')
+            br
+            button#Set Set Sale
+            button#End End Sale
+    h1#logheader Prank List
+    div.table
+        table 
+            +generateTableFromJSON(contacts)

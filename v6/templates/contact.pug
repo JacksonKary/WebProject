@@ -1,0 +1,32 @@
+extends mainPug.pug 
+block title
+    title Contact Form 
+block scripts 
+    script(src='/js/contact.js' async='' defer='')
+block content 
+    div.formpage
+        h1 Summon Us
+        div.form
+            form(action='/contact' method='post')
+                label(for='Name') Their name:
+                input#Name(type='text' name='Name' required='')
+                br
+                label(for='Email') Email:
+                input#Email(type='email' name='Email' required='')
+                br
+                label(for='Date') Choose a date:
+                input#Date(type='date' name='Date')
+                br
+                label(for='Dropdown') Choose a fate:
+                select#Dropdown(name='Dropdown')
+                    option(value='Claymore') Cubicle Claymore
+                    option(value='Halberd') Hybrid Halberd
+                    option(value='Voulge') Vacation Voulge
+                br
+                label(for='Spooky') Would you like us to be spooky?
+                input#Spooky(type='checkbox' name='Spooky' value='Yes')
+                br
+                p#cost
+                br
+                label(for='submit') Look good?
+                input#submit(type='submit' value='Confirm' name='confirm')
