@@ -38,6 +38,7 @@ This version can be ran, or so they say.
     - Run these commands: <b>NOTE: DO THESE IN ORDER</b>
         - <code>npm install</code>
         - <code>node tunnel.js</code> : run the tunnel and sign in to it.
+        - Open a new terminal
         - <code>node server.js</code> : run the project server
 
 - Open <code>http://localhost:4131/</code> in your local browser
