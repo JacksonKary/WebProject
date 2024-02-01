@@ -2,6 +2,7 @@
 ## Change Log
 1. Contact log is now restricted to **authorized users only**. It now prompts the user to log in to view the contact log, using basic auth. 
     - Most secure login ever: (admin, password)
+    - Note: your browser will remember the login for you. Incognito makes this easier to test repeatedly.
 
 2. **NEW SALE FEATURE ON CONTACT LOG PAGE**
     - Add or remove a sale, which will appear as a banner on the homepage.
