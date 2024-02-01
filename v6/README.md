@@ -17,7 +17,7 @@ Is it just me, or does the knight keep getting longer? Someone stop this man! He
 <br>
 
 ## How to run
-This version can be ran, or so they say:
+This version can be ran, or so they say.
 
 ### TO RUN THIS YOURSELF, YOU WILL NEED ACCESS TO YOUR OWN MYSQL SERVER & LOGIN
 
