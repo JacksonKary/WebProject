@@ -1,6 +1,6 @@
 # Version 2
 ## Description
-In this version, I implemented several new endpoints, along with CSS styling, and dynamic HTML generation.
+In this version, I implemented several new endpoints, along with CSS styling, and dynamic HTML generation for the contact log.
 
 ## How to run
 This version can be ran in a few simple steps:
