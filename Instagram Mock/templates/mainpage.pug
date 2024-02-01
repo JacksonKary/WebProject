@@ -1,0 +1,43 @@
+extends template.pug
+
+block title     
+    title Main Page 
+
+block links
+    link(rel='stylesheet' href='/css/main.css')
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css")
+
+block styles 
+    style.
+        div.embedded {
+            color: white;
+        } 
+
+block scripts 
+    script(src='/js/main.js', async, defer)
+
+block content
+    div.home 
+        div.middleContent
+            div.postsContainer
+                form(action="/posts", method="GET", id="settingsForm")
+                    label(for="pageNumber") Page:
+                    input(type="text", id="pageNumber", name="pageNumber", placeholder="1", value=1)
+                    br
+                    label(for="postsPerPage") Posts per page:
+                    input(type="text", id="postsPerPage", name="postsPerPage", placeholder="3", value=3)
+                    br
+                    label(for="algo") Sort by:
+                    select(id="algo", name="algo")
+                        option(value="recent") Recent
+                        option(value="likes") Likes
+                    br
+                    input(type="submit", value="APPLY")
+                //- Area to display posts
+                div#postsContent
+        div.write
+            form(action="/auth/post", method="POST", id="postForm")
+                textarea(id="content", name="content", placeholder="Spill your thoughts!")
+                br
+                input(type="submit", value="POST")
+            div#tokenMessageContent

@@ -1,0 +1,18 @@
+doctype html
+html(lang='en')
+    head 
+        meta(charset='UTF-8' name='viewport' content='width=device-width, initial-scale=1.0')
+        block title
+        block links
+        block styles
+        block scripts 
+    body 
+        div.top
+            nav
+                span
+                    a(href='/main') Home
+                span
+                    a(href='/profile') Profile
+                span
+                    a(href='/login') Login
+        block content

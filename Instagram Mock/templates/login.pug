@@ -1,0 +1,41 @@
+extends template.pug
+
+block title     
+    title Login
+
+block links
+    link(rel='stylesheet' href='/css/main.css')
+
+block scripts 
+    script(src='/js/main.js', async, defer)
+    script(src='/js/login.js', async, defer)
+
+block content 
+    div.loginForms
+        div.login
+            h1 Login
+            form(action="/user/login", method="POST", id="loginForm")
+                label(for="username") Username:
+                br
+                input(type="text", id="username", name="username", placeholder="Enter your username")
+                br
+                label(for="password") Password:
+                br
+                input(type="password", id="password", name="password", placeholder="Enter your password")
+                br
+                input(type="submit", value="Login")
+            div#tokenMessageLogin
+        div.create
+            h1 New? Create an account!
+            form(action="/user/create", method="POST", id="createUserForm")
+                label(for="createUsername") Username:
+                br
+                input(type="text", id="createUsername", name="createUsername", placeholder="Enter your username")
+                br
+                label(for="createPassword") Password:
+                br
+                input(type="password", id="createPassword", name="createPassword", placeholder="Enter your password")
+                br
+                input(type="submit", value="Create Account")
+            div#tokenMessage
+

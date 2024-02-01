@@ -1,0 +1,128 @@
+body {
+    background-color: indigo;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    /* justify-content: space-evenly; */
+    min-height: 100vh;
+    min-width: 100vw;
+    margin: 0;
+}
+
+div.top nav {
+    display: flex;
+    flex-direction: column;
+    align-self: normal;
+    justify-self: left;
+    background-color: gray;
+    justify-content: space-evenly;
+    margin: 0;
+    min-height: 100vh;
+    min-width: 20vw;
+    max-width: 20vw;
+    align-items: center;
+}
+div.top nav a {
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    padding: .6vh;
+    border-radius: 3em;
+}
+div.top nav a:hover {
+    background-color: slategray;
+}
+div.top nav button {
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    padding: .6vh;
+    border-radius: 3em;
+}
+div.top nav button:hover {
+    background-color: slategray;
+}
+
+div.top {
+    flex-grow: 0;
+}
+
+
+div.loginForms {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+div.profile {
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+
+div.home {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+div.middleContent {
+    min-width: 60vw;
+    max-width: 60vw;
+    text-align: center;
+}
+
+/* Style for each post container */
+div.middleContent div#postsContent div.post {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+/* Style for id */
+div.middleContent div#postsContent div.post p.post-id {
+    display: none;
+}
+
+/* Style for likes */
+div.middleContent div#postsContent div.post p.post-likes {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Style for content */
+div.middleContent div#postsContent div.post p.post-content {
+    margin-bottom: 5px;
+}
+
+/* Style for publish time */
+div.middleContent div#postsContent div.post p.post-publish-time {
+    color: #666;
+    font-style: italic;
+}
+
+/* Style for the icon UNLIKED */
+div.middleContent div#postsContent div i#fas.fa-heart.unliked {
+    font-size: 24px; /* Adjust the size as needed */
+    color: white;
+}
+
+div.middleContent div#postsContent div i#fas.fa-heart.liked {
+    font-size: 30px; /* Adjust the size as needed */
+    color: red;
+}
+
+div.write {
+    /* margin-right: 1vw; */
+    min-width: 20vw;
+    max-width: 20vw;
+    color: white;
+    justify-self: end;
+    /* justify-self: right; */
+    text-align: center;
+    align-self: center;
+}
+
