@@ -1,5 +1,7 @@
 # Instagram Mock
 
+## <strong>THIS IS A SEPARATE PROJECT AND IS NOT RELATED TO THE KNIGHT WEBSITE</strong>
+
 This project was supposed to be a rudamentary mimic of Instagram/Twitter, utilizing [Node.js, Express.js, Javascript, Fetch API, MYSQL, MYSQL-await, Pug, CSS, JWT, and bcrypt].
 
 After spending almost 2 hours trying to make the like button interactive, I decided that this project could serve as a demonstration of my SQL knowledge and safe data practices (parameterization, bcrypt, etc.), rather than my front-end skills.
